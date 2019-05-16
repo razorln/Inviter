@@ -6,22 +6,22 @@ body {
 .inviter {
   width: 500px;
 }
-.inviter .inviter__body {
+.inviter .body {
   background-color: #f5f5f5;
   padding: 29px 39px;
   box-sizing: border-box;
 }
-.inviter .inviter__body .inviter__title {
+.inviter .body__title {
   font: 400 20px 'Open Sans', sans-serif;
 }
-.inviter .inviter__body .inviter__title .inviter__title__board_name {
+.inviter .body__title .body__board-name {
   font-weight: 700;
 }
-.inviter .inviter__buttonpane {
+.inviter .buttonpane {
   background-color: #fff;
   padding: 30px 39px;
 }
-.inviter .inviter__buttonpane .inviter_button {
+.inviter .buttonpane__button {
   font-family: 'Open Sans', sans-serif;
   background-color: #2a79ff;
   padding: 8px 18px;
@@ -34,7 +34,7 @@ body {
   font-weight: 300;
   cursor: pointer;
 }
-.email_editor {
+.email-editor {
   height: 99px;
   margin-top: 34px;
   background-color: #fff;
@@ -45,25 +45,26 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
 }
-.email_editor .email_editor__block {
+.email-editor .email-block {
   display: inline-block;
   background-color: #d4e4ff;
   border-radius: 10px;
   padding: 2px 8px;
   margin: 4px 2px 0 0;
 }
-.email_editor .email_editor__block.invalid {
-  background: #fff;
+.email-editor .email-block--invalid {
+  display: inline-block;
+  background-color: #fff;
   border: none;
   border-bottom: 2px dotted #d14836;
   padding: 2px 4px 0;
   border-radius: 0;
 }
-.email_editor .email_editor__block .email_editor__block__text {
+.email-editor .email-block__text {
   display: inline-block;
   margin-right: 5px;
 }
-.email_editor .email_editor__block .email_editor__block__close_button {
+.email-editor .email-block__close-button {
   width: 8px;
   height: 8px;
   display: inline-block;
@@ -72,7 +73,7 @@ body {
   background-repeat: no-repeat;
   cursor: pointer;
 }
-.email_editor .email_editor__input {
+.email-editor__input {
   display: inline-block;
   vertical-align: middle;
   background: none;
