@@ -6,7 +6,7 @@ export default class EmailEditor extends React.Component
     constructor(props) {
         super(props);
         this.state = { 
-            emails: ["sidorov@gmail.com", "petrov@mail.ru"],
+            emails: [],
             text: ""
         };
         this._countValidElement = 0;
@@ -128,6 +128,5 @@ export default class EmailEditor extends React.Component
                     text: ""
                 }));
             }
-        //проверяем пришёл ли какой то текст и формируем блок/блоки на основе этого
     }
 }
